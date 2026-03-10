@@ -1,0 +1,62 @@
+name: Daily Learning Log
+
+on:
+  schedule:
+    - cron: "30 18 * * *"  # Every day at midnight IST (6:30 PM UTC)
+  workflow_dispatch:        # Allow manual trigger
+
+jobs:
+  create-daily-log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Create daily log entry
+        run: |
+          TODAY=$(date +%Y-%m-%d)
+          FILE="daily/$TODAY.md"
+          mkdir -p daily
+          if [ ! -f "$FILE" ]; then
+            cat > "$FILE" << EOF
+# 📝 Learning Log — $TODAY
+
+**MBA Semester 1 | DIMR Pune**
+
+---
+
+## 📖 Today's Learning
+
+### Economic Analysis for Business Decisions
+- Topic:
+- Key concepts:
+- Notes:
+
+### Other Subjects
+- Topic:
+- Notes:
+
+---
+
+## 💡 Key Insight of the Day
+
+>
+
+## 🎯 Tomorrow's Plan
+- [ ]
+
+---
+*Auto-created — update with today's learnings*
+*github.com/SagarAnwekar/learning-log*
+EOF
+            echo "✅ Created: $FILE"
+          else
+            echo "ℹ️ Already exists: $FILE"
+          fi
+
+      - name: Commit daily log
+        run: |
+          git config --global user.name "SagarBot"
+          git config --global user.email "action@github.com"
+          git add daily/
+          git diff --quiet || git commit -m "📚 Daily learning log $(date +%Y-%m-%d)"
+          git push
