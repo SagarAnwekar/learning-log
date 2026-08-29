@@ -1,42 +1,37 @@
-# 📚 Learning Log — Sagar Anwekar
+# Learning Log
 
-> Daily documented learning journey — MBA Business Analytics @ DIMR Pune (2025-27)
+> Evidence-driven notes from an MBA Business Analytics journey, focused on turning concepts into demonstrable analytics skills.
 
-## 📖 MBA Subjects — Semester 1
+## Purpose
 
-| Subject | Code | Progress | Notes |
-|---------|------|----------|-------|
-| Economic Analysis for Business Decisions | EABD | ████████░░ 80% | Demand theory, elasticity, forecasting |
-| Indian Knowledge Systems | IKS-GC08 | ███████░░░ 70% | SPPU 2024 syllabus |
-| Organizational Behaviour | OB | ██████░░░░ 60% | Exam prep ongoing |
-| Business Analytics | BA | ████████░░ 80% | Core subject |
+This repository is a learning archive, not a substitute for project evidence. The hiring-facing portfolio lives in the flagship repositories.
 
-## 📁 Structure
+## Useful categories
 
-```
-learning-log/
-├── daily/                    ← Daily notes (YYYY-MM-DD.md)
-│   └── 2026-03-10.md        ← Today's entry
-├── subjects/
-│   ├── economic-analysis/    ← EABD notes & formulas
-│   ├── indian-knowledge-systems/ ← IKS notes
-│   ├── organizational-behaviour/ ← OB notes
-│   └── business-analytics/  ← BA notes
-├── projects/
-│   └── mauli-collection/    ← Field project notes
-├── weekly-digests/           ← Auto-generated weekly summaries
-└── skills-matrix.md          ← Skill progress tracker
-```
+- SQL and relational data concepts
+- Power BI, DAX, and data modeling
+- Python for analytics
+- statistics and forecasting
+- business analysis and requirements thinking
+- AI application patterns
 
-## 🎯 Learning Goals 2025-26
+## Writing standard
 
-- [ ] Master Excel Advanced (Dashboards, VBA, Power Query)
-- [ ] Complete Python for Data Analytics
-- [ ] Learn SQL fundamentals
-- [ ] Build 3 analytics projects
-- [ ] Get Google Data Analytics Certificate
-- [ ] Complete MBA Semester 1 with distinction
+Each useful entry should capture:
 
----
-*Updated daily — automated via GitHub Actions*
-*Part of Elite GitHub Architecture — github.com/SagarAnwekar*
+1. concept learned
+2. example or exercise
+3. what changed in my understanding
+4. how I could use it in a real business problem
+
+Avoid empty entries or artificial activity. A smaller number of substantive notes is stronger evidence than a large number of auto-generated files.
+
+## Automation
+
+GitHub Actions can create a starter template, but meaningful content is added manually. The repository should never be used to manufacture contribution history.
+
+## Related work
+
+- [Enterprise BI Copilot](https://github.com/SagarAnwekar/enterprise-bi-copilot)
+- [AI Data Quality Agent](https://github.com/SagarAnwekar/ai-data-quality-agent)
+- [Executive Reporting Automation](https://github.com/SagarAnwekar/executive-reporting-automation)
